@@ -1,0 +1,36 @@
+:root {
+  --primary: #a259ff;
+  --secondary: #38bdf8;
+  --accent: #f472b6;
+  --bg-dark: #18122b;
+  --bg-gradient: linear-gradient(135deg, #18122b 0%, #2d1b4a 100%);
+  --card-bg: #221a36;
+  --card-border: #a259ff33;
+  --text-main: #fff;
+  --text-muted: #bdbdbd;
+  --button-gradient: linear-gradient(90deg, #a259ff 0%, #38bdf8 100%);
+  --button-hover: #7c3aed;
+}
+/* This file contains color and style variables for the purple/blue theme */
+:root {
+  --primary: #a259ff;
+  --secondary: #38bdf8;
+  --accent: #f472b6;
+  --bg-light: #fff;
+  --bg-dark: #18122b;
+  --bg-gradient: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+  --card-bg: #fff;
+  --card-border: #e5e7eb;
+  --text-main: #18181b;
+  --text-muted: #6b7280;
+  --button-gradient: linear-gradient(90deg, #a259ff 0%, #38bdf8 100%);
+  --button-hover: #7c3aed;
+}
+
+.dark {
+  --bg-gradient: linear-gradient(135deg, #18122b 0%, #2d1b4a 100%);
+  --card-bg: #221a36;
+  --card-border: #a259ff33;
+  --text-main: #fff;
+  --text-muted: #bdbdbd;
+}
