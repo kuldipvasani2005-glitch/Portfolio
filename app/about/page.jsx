@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const profileStats = [
   { label: "Experience", value: "1+ Years" },
   { label: "Role", value: "Full-Stack" },
@@ -37,7 +39,7 @@ const timeline = [
     year: "July 2023 - April 2026",
     title: "Bachelor of Computer Applications",
     company: "Shri Shambhubhai V. Patel College of Computer Science & Business Management",
-    text: "Focused on Information Technology and computer application fundamentals, developing a strong technical and problem-solving foundation.",
+    text: "Focused on Information Technology and computer application fundamentals, developing a strong technical and problem-solving foundation. Graduated with a CGPA of 8.0 / 10.",
   },
 ];
 
@@ -47,8 +49,11 @@ const personalInfo = [
   { label: "Email", value: "kuldipvasani2005@gmail.com" },
   { label: "Phone", value: "+91 9427931932" },
   { label: "LinkedIn", value: "linkedin.com/in/kuldip-vasani-b331a4312", href: "https://www.linkedin.com/in/kuldip-vasani-b331a4312" },
+  { label: "GitHub", value: "github.com/kuldipvasani2005-glitch", href: "https://github.com/kuldipvasani2005-glitch" },
   { label: "Location", value: "Surat, Gujarat, India" },
 ];
+
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -59,13 +64,25 @@ export default function About() {
           <h1 className="mt-3 text-4xl font-black tracking-[-0.05em] text-[var(--text-main)] md:text-6xl">
             Full-Stack Web Developer
           </h1>
+          <Link
+            href="/resume"
+            className="mt-5 inline-flex items-center rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] px-5 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Open full resume -&gt;
+          </Link>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="rounded-[30px] border border-[var(--card-border)] bg-[var(--card-bg)] p-6 shadow-[0_20px_50px_rgba(15,23,42,0.05)] md:p-8">
             <div className="mb-6 flex items-center gap-4">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] text-xl font-black text-white">
-                KV
+              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-[var(--primary)] bg-white">
+                <Image
+                  src="/my.png"
+                  alt="Kuldip Vasani"
+                  width={64}
+                  height={64}
+                  className="h-full w-full object-cover object-center"
+                />
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">Profile</p>

@@ -51,6 +51,15 @@ export default function UtaraProject() {
               Utara is a complete dormitory, guest accommodation, and room-management platform designed to manage guests, rooms, buildings, floors, room types, bookings, allocations, assets, check-in/check-out, and feedback.
             </p>
 
+            <a
+              href="https://utara.clonzainfotech.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] px-5 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              Visit live project -&gt;
+            </a>
+
             <div className="rounded-[24px] border border-[var(--card-border)] bg-[var(--card-bg)] p-5">
               <h3 className="text-xl font-bold text-[var(--text-main)]">Main business flow</h3>
               <p className="mt-3 text-base leading-7 text-[var(--text-muted)]">

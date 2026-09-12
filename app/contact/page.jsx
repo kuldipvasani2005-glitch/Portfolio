@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const contactInfo = [
@@ -53,8 +54,14 @@ export default function Contact() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-[30px] border border-[var(--card-border)] bg-[var(--card-bg)] p-6 shadow-[0_20px_50px_rgba(15,23,42,0.05)] md:p-8">
             <div className="mb-6 flex items-center gap-4">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] text-xl font-black text-white">
-                KV
+              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-[var(--primary)] bg-white">
+                <Image
+                  src="/my.png"
+                  alt="Kuldip Vasani"
+                  width={64}
+                  height={64}
+                  className="h-full w-full object-cover object-center"
+                />
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">Profile</p>

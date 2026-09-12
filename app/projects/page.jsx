@@ -26,6 +26,18 @@ const projectItems = [
     description: "A refined creative platform emphasizing balance, clarity, and strong visual storytelling for users.",
     href: "/projects/harmony",
   },
+  {
+    name: "JobSeek",
+    image: "/images/jobseek.png",
+    description: "A focused recruitment platform concept connecting candidates with relevant opportunities and hiring teams.",
+    href: "/projects/jobseek",
+  },
+  {
+    name: "Bank",
+    image: "/images/k2f.png",
+    description: "A clean banking dashboard concept for account insights, transactions, transfers, and financial planning.",
+    href: "/projects/bank",
+  },
 ];
 
 export default function Projects() {
@@ -48,7 +60,7 @@ export default function Projects() {
                   alt={`${project.name} project image`}
                   width={420}
                   height={260}
-                  className="h-full w-full object-contain p-4"
+                  className="h-full w-full object-contain p-4 mix-blend-multiply"
                 />
               </div>
 

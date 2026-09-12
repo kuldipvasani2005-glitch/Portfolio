@@ -2,6 +2,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 
 const ThemeToggle = dynamic(() => import("./ThemeToggle"), { ssr: false });
@@ -26,7 +27,7 @@ export default function Navbar() {
         <ul className="flex gap-8 items-center">
           {tabs.map((tab) => (
             <li key={tab.name}>
-              <a
+              <Link
                 href={tab.href}
                 className={`text-base font-semibold px-2 py-1 rounded transition-colors duration-200
                   ${pathname === tab.href
@@ -35,16 +36,16 @@ export default function Navbar() {
                 `}
               >
                 {tab.name}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a
+            <Link
               href="/contact"
               className="ml-4 px-5 py-2 rounded-full font-semibold text-white bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] shadow-lg hover:from-[var(--button-hover)] hover:to-[var(--secondary)] transition-all duration-200"
             >
               Contact
-            </a>
+            </Link>
           </li>
           <li>
             <ThemeToggle />
