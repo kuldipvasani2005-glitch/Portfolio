@@ -104,7 +104,7 @@ export default function About() {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {profileStats.map((stat) => (
-                <div key={stat.label} className="rounded-2xl border border-[var(--card-border)] bg-[#f5f7fa] p-4 text-center">
+                <div key={stat.label} className="rounded-2xl border border-[var(--card-border)] bg-[var(--soft-bg)] p-4 text-center">
                   <div className="text-2xl font-black text-[var(--text-main)]">{stat.value}</div>
                   <div className="mt-1 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--secondary)]">
                     {stat.label}
@@ -141,7 +141,7 @@ export default function About() {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--secondary)]">Top Skills</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {skillList.map((skill) => (
-                    <span key={skill} className="rounded-full border border-[var(--card-border)] bg-[#f5f7fa] px-3 py-2 text-sm font-medium text-[var(--text-main)]">
+                    <span key={skill} className="rounded-full border border-[var(--card-border)] bg-[var(--soft-bg)] px-3 py-2 text-sm font-medium text-[var(--text-main)]">
                       {skill}
                     </span>
                   ))}

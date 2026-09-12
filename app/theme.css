@@ -21,6 +21,7 @@
   --bg-gradient: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
   --card-bg: #fff;
   --card-border: #e5e7eb;
+  --soft-bg: #f5f7fa;
   --text-main: #18181b;
   --text-muted: #6b7280;
   --button-gradient: linear-gradient(90deg, #a259ff 0%, #38bdf8 100%);
@@ -31,6 +32,7 @@
   --bg-gradient: linear-gradient(135deg, #18122b 0%, #2d1b4a 100%);
   --card-bg: #221a36;
   --card-border: #a259ff33;
+  --soft-bg: #302747;
   --text-main: #fff;
   --text-muted: #bdbdbd;
 }
