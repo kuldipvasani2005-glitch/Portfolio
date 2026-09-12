@@ -60,30 +60,30 @@ export default function Home() {
   return (
     <section className="w-full !bg-transparent !shadow-none !border-0 p-0">
       <div className="min-h-[calc(100vh-110px)] flex items-center py-8 md:py-12">
-        <div className="w-full max-w-7xl mx-auto grid items-center gap-10 lg:grid-cols-[1.12fr_0.88fr]">
-          <div className="text-left">
+        <div className="w-full min-w-0 max-w-7xl mx-auto grid items-center gap-10 lg:grid-cols-[1.12fr_0.88fr]">
+          <div className="min-w-0 max-w-full text-left">
             <div className="mb-6 flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center rounded-full border border-[var(--card-border)] bg-white/5 px-4 py-2 text-xs font-semibold tracking-[0.24em] text-[var(--secondary)] uppercase">
+              <span className="inline-flex max-w-full items-center rounded-full border border-[var(--card-border)] bg-white/5 px-4 py-2 text-xs font-semibold tracking-[0.24em] text-[var(--secondary)] uppercase">
                 Available for work
               </span>
-              <span className="inline-flex items-center rounded-full border border-[var(--card-border)] bg-[var(--card-bg)] px-3 py-2 text-xs font-medium text-[var(--text-muted)]">
+              <span className="inline-flex min-w-0 max-w-full items-center rounded-full border border-[var(--card-border)] bg-[var(--card-bg)] px-3 py-2 text-xs font-medium text-[var(--text-muted)] break-words">
                 React.js • Next.js • Node.js • NestJS
               </span>
             </div>
 
-            <h1 className="max-w-xl text-4xl font-black leading-[1.02] tracking-[-0.05em] sm:text-5xl md:text-6xl lg:text-[5rem]">
+            <h1 className="max-w-full text-4xl font-black leading-[1.02] tracking-[-0.05em] break-words sm:max-w-xl sm:text-5xl md:text-6xl lg:text-[5rem]">
               Kuldip Vasani
               <span className="block text-[var(--primary)]">Full-Stack Web Developer</span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--text-muted)] md:text-xl">
+            <p className="mt-6 max-w-full text-lg leading-8 text-[var(--text-muted)] break-words md:max-w-xl md:text-xl">
               I am a passionate Full-Stack Web Developer specializing in React.js, Next.js, Node.js, NestJS, and PostgreSQL, building scalable, secure, and high-performance web applications from frontend to backend.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="hero-actions mt-8 flex max-w-full flex-wrap items-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] px-7 py-3.5 text-base font-semibold text-white shadow-[0_18px_40px_rgba(92,71,255,0.45)] transition-transform duration-200 hover:-translate-y-0.5"
+                className="inline-flex max-w-full items-center justify-center rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] px-7 py-3.5 text-base font-semibold text-white shadow-[0_18px_40px_rgba(92,71,255,0.45)] transition-transform duration-200 hover:-translate-y-0.5"
               >
                 Book a project
               </Link>
@@ -117,13 +117,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex min-w-0 max-w-full justify-center lg:justify-end">
             <div className="absolute -inset-4 rounded-[3rem] bg-gradient-to-r from-[var(--primary)]/25 via-[var(--secondary)]/15 to-[var(--accent)]/20 blur-3xl" />
 
-            <div className="group relative flex h-[520px] w-[520px] max-w-full items-center justify-center rounded-[50%] border-[10px] border-white bg-[#f4f5f5] shadow-[0_40px_90px_rgba(70,40,120,0.45)] transition-transform duration-300 hover:scale-[1.01]">
+            <div className="group relative flex h-[min(520px,85vw)] w-[min(520px,85vw)] max-w-full items-center justify-center rounded-[50%] border-[10px] border-white bg-[#f4f5f5] shadow-[0_40px_90px_rgba(70,40,120,0.45)] transition-transform duration-300 hover:scale-[1.01]">
               <div className="absolute inset-[16px] rounded-full bg-[#f4f5f5]" />
 
-              <div className="relative z-10 h-[420px] w-[420px] overflow-hidden rounded-full bg-[#f3f2ef]">
+              <div className="relative z-10 h-[80%] w-[80%] overflow-hidden rounded-full bg-[#f3f2ef]">
                 <Image
                   src="/my.png"
                   alt="Professional portfolio portrait"
